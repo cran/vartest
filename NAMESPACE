@@ -1,0 +1,5 @@
+export(levene.test, obrien.test, mzv.test, zv.test, hartley.test, g.test, f.test, cochrans.test, bartletts.test, adjusted.taha.test, ansari.test, capon.test, david.barton.test, duran.test, fk.test, klotz.test, mood.test, siegel.tukey.test, taha.test, talwar.gentle.test)
+importFrom("stats", "complete.cases", "median", "model.frame", "pf", "var", "pchisq", "ppoints", "qnorm", "sd")
+importFrom("SuppDists", "pmaxFratio")
+importFrom("psych", "harmonic.mean")
+
