@@ -38,7 +38,7 @@ hartley.test <- function (formula, data, size = "mean", alpha = 0.05, na.rm = TR
   n <- length(y)
   x.levels <- levels(factor(group))
   k <- length(x.levels)
-  ni<- tapply(y, group, length)
+  ni<- as.numeric(tapply(y, group, length))
   
   
   vars <- tapply(y, group, var)

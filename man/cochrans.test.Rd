@@ -8,7 +8,7 @@ Cochran's C Test
 \code{cochrans.test} performs Cochran's C variance homogeneity test.
 }
 
-\usage{cochrans.test(formula, data,alpha = 0.05, na.rm = TRUE, verbose = TRUE)}
+\usage{cochrans.test(formula, data, alpha = 0.05, na.rm = TRUE, verbose = TRUE)}
 
 %- maybe also 'usage' for other objects documented here.
 \arguments{

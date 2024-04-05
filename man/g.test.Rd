@@ -8,7 +8,7 @@ G Test
 \code{g.test} performs G variance homogeneity test.
 }
 
-\usage{g.test(formula, data,alpha = 0.05, na.rm = TRUE, verbose = TRUE) }
+\usage{g.test(formula, data, alpha = 0.05, na.rm = TRUE, verbose = TRUE) }
 
 %- maybe also 'usage' for other objects documented here.
 \arguments{

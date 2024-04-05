@@ -8,7 +8,7 @@ Bartlett's Test
 \code{bartletts.test} performs Bartlett variance homogeneity test.
 }
 
-\usage{bartletts.test(formula, data,alpha = 0.05, na.rm = TRUE, verbose = TRUE)}
+\usage{bartletts.test(formula, data, alpha = 0.05, na.rm = TRUE, verbose = TRUE)}
 
 %- maybe also 'usage' for other objects documented here.
 \arguments{

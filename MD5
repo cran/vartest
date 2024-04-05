@@ -1,4 +1,4 @@
-870c863d04678d678eebe42465daa0ba *DESCRIPTION
+cca91df845d7eb0ef3922e2555500d53 *DESCRIPTION
 09d55708bb5d374c41f363715bc001eb *NAMESPACE
 30890bc2a6f33f8461557e82ad2ee310 *R/adjusted.taha.test.R
 a19d4e43fa16258ff46b6eed390f37c1 *R/ansari.test.R
@@ -9,8 +9,8 @@ a19d4e43fa16258ff46b6eed390f37c1 *R/ansari.test.R
 49fdd906af43976387f819f77dfd2f75 *R/duran.test.R
 cb1cb7d219c8d7165f719d1e7ffa319c *R/f.test.R
 6d86fef0b08fde47d92e1e58709d58df *R/fk.test.R
-ca26b7a124bdf24e1a1b7490807f99a1 *R/g.test.R
-f63105c773977f26221aa7e7425fd857 *R/hartley.test.R
+417ba275e9bd3887b0d1fb2e1e09c35c *R/g.test.R
+716ba0757db30d2b4b49c6b0fda12cf9 *R/hartley.test.R
 c790691cc112adbb55098c69615d904a *R/klotz.test.R
 dd699d3a55049ec3eac4209a5da2997a *R/levene.test.R
 a87e4c7e28d6c490597d4740f369fc87 *R/mood.test.R
@@ -23,14 +23,14 @@ df31da0d542cd417cc484e217d842916 *R/siegeltukey.test.R
 559c799052347814d0c33378e47844ce *R/zv.test.R
 7d1a199c959ef7d386edecb7655652a6 *man/adjusted.taha.test.Rd
 65ac5d07ebb4bfa6817a6065622fdc3a *man/ansari.test.Rd
-9dbfbfe03f2f7c506e69d7ea37aa8fd9 *man/bartletts.test.Rd
+213414c4f68cc17a78ffeaf371d1909c *man/bartletts.test.Rd
 8c962f22b95858685e6d5bbe86d9f286 *man/capon.test.Rd
-0c2e9e3f80a78cc598f092eb66705011 *man/cochrans.test.Rd
+16b1b15e70b11819bc2cf0e31e7bcfdc *man/cochrans.test.Rd
 8cc58d0d7b883efba3b8d11e46e80dde *man/david.barton.test.Rd
 4397bd941ff246681c82f17acbcd6f16 *man/duran.test.Rd
 9bd04a1dc8401d3e19c658ee45dc1f83 *man/f.test.Rd
 db07b6c3bab63073a3d2618e7643347e *man/fk.test.Rd
-301a529925a99826f9e747edc44f5371 *man/g.test.Rd
+cff5d52b63b7b80423db18f80825f3f8 *man/g.test.Rd
 5caab84fd5c4a37ed5255c69f380911f *man/hartley.test.Rd
 1795239a9f4d18cf35fb276d141eb390 *man/klotz.test.Rd
 8a39f986185e8a2a03ece680cb42dfb0 *man/levene.test.Rd

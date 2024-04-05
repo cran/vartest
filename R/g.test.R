@@ -67,9 +67,9 @@ g.test <- function (formula, data,alpha = 0.05, na.rm = TRUE, verbose = TRUE)
   }
   
   result <- list()
-  result$statistic <- G
+  result$statistic <- as.numeric(G)
   result$parameter <- c(df1, df2)
-  result$p.value <- pval
+  result$p.value <- as.numeric(pval)
   result$alpha <- alpha
   result$method <- METHOD
   result$data <- data
