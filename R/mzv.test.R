@@ -43,7 +43,7 @@ mzv.test <- function (formula, data, alpha = 0.05, na.rm = TRUE, verbose = TRUE)
 
   K<- g_total/(ni-2)
   
-  ci <- 2*((2.9+0.2/ni)/mean(K))^((1.6*(ni-1.8*K+14.7))/ni)
+  ci <- 2*(((2.9+0.2/ni)/mean(K))^((1.6*(ni-1.8*K+14.7))/ni))
   
   z<- list()
   for (i in x.levels) {
@@ -57,9 +57,9 @@ mzv.test <- function (formula, data, alpha = 0.05, na.rm = TRUE, verbose = TRUE)
   zi_left<- sqrt((ci*(ni-1)*y.variance)/MSE)
   zi_right<- sqrt(ci*(ni-1)-(ci/2)) 
   
-  zi<- (zi_left) - (zi_right)
+  zi<- as.numeric(zi_left - zi_right)
 
-vtest<- sum(zi^2)
+vtest<- sum(zi^2)/(k-1)
 
 df1 = k-1
 df2 = Inf

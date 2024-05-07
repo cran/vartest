@@ -39,6 +39,8 @@ cochrans.test <- function (formula, data,alpha = 0.05, na.rm = TRUE, verbose = T
   
   pval <- pf(f, ni-1, (ni-1)*(k-1), lower.tail=F)*k
   
+  if (pval>1){pval <- 1}
+  
   df1 <- ni-1
   df2 <- (ni-1)*(k-1)
   

@@ -40,9 +40,12 @@ g.test <- function (formula, data,alpha = 0.05, na.rm = TRUE, verbose = TRUE)
   
   G <- (vi.max*vars.max)/sum(vi*vars) 
   
-  f <- 1/(((1/G)-1)/(vpool/(vi.max-1)))	
+  f <- (vpool/vi.max-1)/(1/G-1)	
   
   pval <- pf(f, ni.mean-1, (ni.mean-1)*(k-1), lower.tail=F)*k
+  
+  if (pval>1){pval <- 1}
+  
   df1<- ni.mean-1
   df2<- (ni.mean-1)*(k-1)
   

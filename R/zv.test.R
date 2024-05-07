@@ -48,7 +48,7 @@ zv.test <- function (formula, data, alpha = 0.05, na.rm = TRUE, verbose = TRUE){
 
   zi<- as.numeric(zi_left - zi_right)
 
-  vtest<- sum(zi^2)/k-1
+  vtest<- sum(zi^2)/(k-1)
 
   df1 = k-1
   df2 = Inf
