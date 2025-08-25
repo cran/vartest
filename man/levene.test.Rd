@@ -16,7 +16,7 @@ Levene's Test
   \item{formula}{a formula of the form \code{lhs ~ rhs} where \code{lhs} gives the sample values and \code{rhs} the corresponding groups.}
   \item{data}{a tibble or data frame containing the variables in \code{formula}.} 
   \item{center}{a character string to define how to center. "mean": mean, "median": median, and "trim.mean": trimmed mean.} 
-  \item{deviation}{a character string to define how to specify the deviation. "absoluate": absolute deviation and "squared": squared deviation.} 
+  \item{deviation}{a character string to define how to specify the deviation. "absolute": absolute deviation and "squared": squared deviation.} 
   \item{trim.rate}{the rate of observations trimmed from each tail of the distribution. Default is set to 0.25.} 
   \item{alpha}{the level of significance to assess variance homogeneity. Default is set to alpha = 0.05.}
   \item{na.rm}{a logical value indicating whether NA values should be stripped before the computation proceeds.}
@@ -27,7 +27,7 @@ Levene's Test
 
 
 \value{
-A list containing the following components:
+A list with class "vht" containing the following components:
 \item{statistic}{the corresponding test statistic.}
 \item{parameter}{the parameter(s) of the approximate F distribution of the test statistic.}
 \item{p.value}{the p-value of the test.}
@@ -69,6 +69,9 @@ levene.test(Sepal.Length ~ Species, data = iris, center="mean", deviation="absol
 levene.test(Sepal.Length ~ Species, data = iris, center="mean", deviation="squared")
 levene.test(Sepal.Length ~ Species, data = iris, center="trim.mean", deviation="absolute")
 levene.test(Sepal.Length ~ Species, data = iris, center="trim.mean", deviation="squared")
+
+out <- levene.test(Sepal.Length~Species, data=iris, center="median", deviation="absolute")
+summary(out)
 
 }
 

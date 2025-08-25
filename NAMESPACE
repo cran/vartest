@@ -2,4 +2,5 @@ export(levene.test, obrien.test, mzv.test, zv.test, hartley.test, g.test, f.test
 importFrom("stats", "complete.cases", "median", "model.frame", "pf", "var", "pchisq", "ppoints", "qnorm", "sd")
 importFrom("SuppDists", "pmaxFratio")
 importFrom("psych", "harmonic.mean")
-
+S3method(summary, vht)
+S3method(print, summary.vht)

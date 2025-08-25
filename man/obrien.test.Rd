@@ -26,7 +26,7 @@ O'Brien Test
 
 
 \value{
-A list containing the following components:
+A list with class "vht" containing the following components:
 \item{statistic}{the corresponding test statistic.}
 \item{parameter}{the parameter(s) of the approximate F distribution of the test statistic.}
 \item{p.value}{the p-value of the test.}
@@ -60,8 +60,10 @@ Gozde Cosar and Osman Dag
 
 library(vartest)
 
-obrien.test(Sepal.Length ~ Species, data = iris, center="mean")
+obrien.test(Sepal.Length ~ Species, data = iris, center = "mean")
 
+out <- obrien.test(Sepal.Length ~ Species, data = iris, center = "mean")
+summary(out)
 }
 
 \keyword{functions}

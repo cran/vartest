@@ -46,23 +46,8 @@ cochrans.test <- function (formula, data,alpha = 0.05, na.rm = TRUE, verbose = T
   
   
   if (verbose) {
-    cat("\n", "", METHOD, paste("(alpha = ", alpha, ")", 
-                                sep = ""), "\n", sep = " ")
-    cat("-------------------------------------------------------------", 
-        "\n", sep = " ")
-    cat("  data :", DNAME, "\n\n", sep = " ")
-    cat("  statistic  :", C , "\n", sep = " ")
-    cat("  num df     :", df1, "\n", sep = " ")
-    cat("  denom df   :", df2, "\n", sep = " ")
-    cat("  p.value    :", pval, "\n\n", sep = " ")
-    cat(if (pval > alpha) {
-      "  Result     : Variances are homogeneous."
-    }
-    else {
-      "  Result     : Variances are not homogeneous."
-    }, "\n")
-    cat("-------------------------------------------------------------", 
-        "\n\n", sep = " ")
+  print(structure(list(statistic = c("F" = C), parameter = c("num df" = df1, "denom df" = df2), 
+                 p.value = pval, method = METHOD, data.name = DNAME), class = "htest"))
   }
   
   result <- list()
@@ -73,6 +58,7 @@ cochrans.test <- function (formula, data,alpha = 0.05, na.rm = TRUE, verbose = T
   result$method <- METHOD
   result$data <- data
   result$formula <- formula
+  attr(result, "class") <- "vht"
   invisible(result)
   
 }

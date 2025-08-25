@@ -22,7 +22,7 @@ Cochran's C Test
 
 
 \value{
-A list containing the following components:
+A list with class "vht" containing the following components:
 \item{statistic}{the corresponding test statistic.}
 \item{parameter}{the parameter(s) of the approximate F distribution of the test statistic.}
 \item{p.value}{the p-value of the test.}
@@ -60,7 +60,8 @@ library(vartest)
 
 cochrans.test(Sepal.Length ~ Species, data = iris)
 
-
+out <- cochrans.test(Sepal.Length ~ Species, data = iris, verbose = FALSE)
+summary(out)
 }
 
 \keyword{functions}

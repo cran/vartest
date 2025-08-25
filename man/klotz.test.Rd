@@ -23,9 +23,9 @@ Klotz Test
 
 
 \value{
-A list containing the following components:
+A list with class "vht" containing the following components:
 \item{statistic}{the corresponding test statistic.}
-\item{parameter}{the parameter(s) of the approximate chi squared distribution of the test statistic.}
+\item{parameter}{the parameter(s) of the approximate chi-squared distribution of the test statistic.}
 \item{p.value}{the p-value of the test.}
 \item{method}{the character string "Klotz Test".}
 \item{data}{a data frame containing the variables in which NA values (if exist) are removed.}
@@ -61,7 +61,8 @@ library(vartest)
 
 klotz.test(Sepal.Length ~ Species, data = iris)
 
-
+out <- klotz.test(Sepal.Length ~ Species, data = iris)
+summary(out)
 }
 
 \keyword{functions}
