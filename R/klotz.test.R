@@ -16,9 +16,10 @@ klotz.test<-function (formula, data, alpha = 0.05, na.rm = TRUE, verbose = TRUE)
     stop("The name of response variable does not match the variable names in the data.")
   
   y = data[[dp[[2L]]]]
-  order<- order(y)
-  y<- y[order]
   group = data[[dp[[3L]]]]
+  y <- y - tapply(y,group,median)[group]
+  order<- order(y)
+  y<- y[order]  
   group<- group[order]
   
   if (!(is.factor(group) | is.character(group))) 

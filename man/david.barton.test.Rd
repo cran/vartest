@@ -20,6 +20,12 @@ David Barton Test
 
 }
 
+\details{
+Prior to testing for variance homogeneity, the data within each group are centered by their corresponding group median to eliminate the confounding effects of location parameters.
+}
+
+
+
 
 \value{
 A list with class "vht" containing the following components:

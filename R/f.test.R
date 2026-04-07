@@ -52,9 +52,7 @@ f.test <- function (formula, data, alpha = 0.05, na.rm = TRUE, verbose = TRUE)
   df1<- ni[which.max(vars)]-1
   df2<- ni[which.min(vars)]-1
   
-  p.value <- pf(F.test, df1, df2, lower.tail = F)
-  
-
+  p.value <- ifelse(2*pf(F.test, df1, df2, lower.tail = F)>1, 1, 2*pf(F.test, df1, df2, lower.tail = F))
   
   if (verbose) {
   print(structure(list(statistic = c("F" = F.test), parameter = c("num df" = df1, "denom df" = df2), 
