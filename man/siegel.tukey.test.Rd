@@ -21,7 +21,7 @@ Siegel Tukey Test
 }
 
 \details{
-Prior to testing for variance homogeneity, the data within each group are centered by their corresponding group median to eliminate the confounding effects of location parameters.
+Prior to testing for variance homogeneity, the data within each group are centered by their corresponding group median to eliminate the confounding effects of location parameters (Conover et al., 1981).
 }
 
 
@@ -40,6 +40,8 @@ A list with class "vht" containing the following components:
 
 
 \references{
+
+Conover, W.J., Johnson, M.E., Johnson, M.M. (1981). A Comparative Study of Tests for Homogeneity of Variances, with Applications to the Outer Continental Shelf Bidding Data. \emph{Technometrics}, \bold{23:4}, 351-361.
 
 Gibbons, J.D., Chakraborti, S. (2010). Nonparametric Statistical Inference. \emph{CRC Press}, \bold{5th Ed.}, 316-320.
 

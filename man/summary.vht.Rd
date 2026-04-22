@@ -24,7 +24,7 @@ This method is specifically designed for objects of class \code{vht}. It prints 
 }
 
 \author{
-Merve Kasikci, Osman Dag
+Merve Kasikci and Osman Dag
 }
 
 \examples{

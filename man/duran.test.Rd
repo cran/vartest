@@ -21,7 +21,8 @@ Duran Test
 }
 
 \details{
-Prior to testing for variance homogeneity, the data within each group are centered by their corresponding group median to eliminate the confounding effects of location parameters.
+Prior to testing for variance homogeneity, the data within each group are centered by their corresponding group median to eliminate the confounding effects of location parameters. This median-centered variant of the test is 
+also referred to as the Conover-Iman test in literature (Conover and Iman, 1978). 
 }
 
 

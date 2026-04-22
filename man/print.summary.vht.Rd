@@ -14,7 +14,7 @@ Prints the formatted summary of a \code{vht} object to the console.
 }
 
 \author{
-Merve Kasikci, Osman Dag
+Merve Kasikci and Osman Dag
 }
 
 \seealso{

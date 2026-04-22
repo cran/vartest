@@ -1,10 +1,10 @@
 Package: vartest
 Type: Package
 Title: Tests for Variance Homogeneity
-Version: 1.4
-Date: 2026-04-07
+Version: 1.5
+Date: 2026-04-22
 Depends: R (>= 3.2.0)
-Imports: stats, SuppDists, psych
+Imports: stats, SuppDists, psych, moments, PearsonDS
 Suggests: testthat
 Authors@R: c(person("Gozde", "Cosar", role = "aut"), person("Muhammed Ali", "Yilmaz", role = "aut"), person("Merve", "Kasikci", role = "aut"), person("Osman", "Dag", role = c("aut", "cre"), email = "osman.dag@outlook.com"))
 Author: Gozde Cosar [aut],
@@ -12,9 +12,9 @@ Author: Gozde Cosar [aut],
   Merve Kasikci [aut],
   Osman Dag [aut, cre]
 Maintainer: Osman Dag <osman.dag@outlook.com>
-Description: Performs 20 omnibus tests for testing the composite hypothesis of variance homogeneity.
+Description: Performs 18 omnibus tests yielding a total of 28 distinct methodological variations for testing the composite hypothesis of variance homogeneity.
 License: GPL (>= 2)
 NeedsCompilation: no
-Packaged: 2026-04-07 10:39:23 UTC; USER
+Packaged: 2026-04-22 09:35:25 UTC; USER
 Repository: CRAN
-Date/Publication: 2026-04-07 10:50:02 UTC
+Date/Publication: 2026-04-22 10:00:03 UTC
